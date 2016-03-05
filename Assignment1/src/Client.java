@@ -88,7 +88,7 @@ public class Client
 			//1 
 			if(responseline.indexOf("href=") != -1)
 			{
-				 Matcher hrefMatcher = Pattern.compile("href=\"([^\"]*)\"").matcher(responseline); // regex get contents in href tag and put in group 1
+				 Matcher hrefMatcher = Pattern.compile("href=\"([^\"]*)\"?").matcher(responseline); // regex get contents in href tag and put in group 1
 				 while (hrefMatcher.find()) 
 					 hrefMatches.add(hrefMatcher.group(1)); 
 			}
