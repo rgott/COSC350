@@ -10,7 +10,7 @@ public class Server {
 		
 		ServerSocket s1=new ServerSocket(21252); 
 		Socket ss=s1.accept();
-		//Scanner input = new Scanner(ss.getInputStream()); 
+		////Scanner input = new Scanner(ss.getInputStream()); 
 		BufferedReader in=new BufferedReader(new InputStreamReader(ss.getInputStream()));
 		
 		
