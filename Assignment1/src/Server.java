@@ -16,13 +16,13 @@ public class Server {
 		BufferedReader inFromClient = new BufferedReader(new InputStreamReader(clientConnection.getInputStream()));
 		
 		
-		try // try to parse the integer recieved as string
+		try // try to parse the integer received as string
 		{
 			c2 = Integer.parseInt(inFromClient.readLine().split("=")[1]);
 			c3 = Integer.parseInt(inFromClient.readLine().split("=")[1]);  
 			c4 = Integer.parseInt(inFromClient.readLine().split("=")[1]);			
 		
-			System.out.println("Port connected to is: " + _PORT);
+			System.out.println("port=" + _PORT);// changed after wireshark test
 			System.out.println("c.2=" + c2);
 			System.out.println(); 
 			System.out.println("c.3=" + c3);
